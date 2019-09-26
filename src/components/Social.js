@@ -5,7 +5,7 @@ import {
   faTwitter,
   faGithub,
   faBehance,
-  faBlogger
+  faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 
 export default class Social extends Component {
@@ -24,8 +24,8 @@ export default class Social extends Component {
         <a target="blank" href="https://www.behance.net/midoghranek">
           <FontAwesomeIcon icon={faBehance} />
         </a>
-        <a target="blank" href="https://ghranek-source.blogspot.com">
-          <FontAwesomeIcon icon={faBlogger} />
+        <a target="blank" href="https://wa.me/201289454915">
+          <FontAwesomeIcon icon={faWhatsapp} />
         </a>
       </div>
     );
