@@ -1,6 +1,6 @@
 {
   "name": "ghranek",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -18,9 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "firebase": "firebase deploy --only hosting",
-    "release": "npm run build && npm run firebase",
     "git": "git add . && git commit -m",
-    "postgit": "git push --all"
+    "postgit": "git push --all",
+    "release": "npm run build && npm run firebase && npm run git"
   },
   "eslintConfig": {
     "extends": "react-app"
