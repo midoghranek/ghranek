@@ -18,7 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "firebase": "firebase deploy --only hosting",
-    "release": "npm run build && npm run firebase"
+    "release": "npm run build && npm run firebase",
+    "git": "git add . && git commit -m",
+    "postgit": "git push --all"
   },
   "eslintConfig": {
     "extends": "react-app"

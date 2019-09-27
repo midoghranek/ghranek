@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faTwitter,
@@ -8,25 +9,36 @@ import {
   faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 
+import socialLinks from "../constants/social.json";
+
+socialLinks.map(social => {
+  switch (social.name) {
+    default:
+      return (social.icon = <FontAwesomeIcon icon={faLink} />);
+    case "facebook":
+      return (social.icon = <FontAwesomeIcon icon={faFacebook} />);
+    case "twitter":
+      return (social.icon = <FontAwesomeIcon icon={faTwitter} />);
+    case "github":
+      return (social.icon = <FontAwesomeIcon icon={faGithub} />);
+    case "behance":
+      return (social.icon = <FontAwesomeIcon icon={faBehance} />);
+    case "whatsapp":
+      return (social.icon = <FontAwesomeIcon icon={faWhatsapp} />);
+  }
+});
+
 export default class Social extends Component {
   render() {
     return (
       <div className="icons">
-        <a target="blank" href="https://www.facebook.com/midoghranek">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a target="blank" href="https://twitter.com/midoghranek">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a target="blank" href="https://github.com/midoghranek">
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a target="blank" href="https://www.behance.net/midoghranek">
-          <FontAwesomeIcon icon={faBehance} />
-        </a>
-        <a target="blank" href="https://wa.me/201289454915">
-          <FontAwesomeIcon icon={faWhatsapp} />
-        </a>
+        {socialLinks.map(social => {
+          return (
+            <a target="blank" href={social.link}>
+              {social.icon}
+            </a>
+          );
+        })}
       </div>
     );
   }
