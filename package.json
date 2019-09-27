@@ -1,6 +1,6 @@
 {
   "name": "ghranek",
-  "version": "1.0.6",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "firebase": "firebase deploy --only hosting",
     "release": "npm run build && npm run firebase",
-    "git": "git add . && git commit -m 'process.env.npm_package_version'",
+    "git": "git add . && git commit -m",
     "postgit": "git push --all"
   },
   "eslintConfig": {
@@ -36,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cross-env": "^6.0.0"
   }
 }
