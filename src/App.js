@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles/main.scss";
-import Coming from "./containers/Coming";
+import Home from "./containers/Home";
 
 function App() {
-  return <Coming />;
+  return <Home />;
 }
 
 export default App;

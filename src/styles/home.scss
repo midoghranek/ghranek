@@ -1,0 +1,91 @@
+$textColor: #222;
+$textColor2: #888;
+$pColor: #3589cc;
+
+.container {
+  padding-top: 100px;
+  .inner {
+    max-width: 1640px;
+    margin: auto;
+  }
+  .path {
+    background: url("../assets/images/path.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 111%;
+    height: 626px;
+    z-index: -1;
+    top: -170px;
+    left: -80px;
+  }
+  .right-art {
+    background: url("../assets/images/right-art.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1080px;
+    height: 872px;
+    z-index: -1;
+    bottom: 0;
+    right: 140px;
+  }
+  header {
+    color: #fff;
+    text-align: left;
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 200;
+      margin-left: 48px;
+    }
+  }
+  .box {
+    margin-top: 170px;
+    img {
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+    h1 {
+      font-size: 39px;
+      margin-top: 65px;
+      margin-bottom: 65px;
+      color: $textColor;
+    }
+    .skills {
+      line-height: 40px;
+      max-width: 600px;
+      span {
+        color: $textColor2;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 200;
+      }
+    }
+  }
+  .icons {
+    margin-top: 65px;
+    a {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      color: $textColor;
+      margin-right: 30px;
+      &:hover {
+        color: $pColor;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      svg {
+        font-size: 30px;
+      }
+    }
+  }
+}
