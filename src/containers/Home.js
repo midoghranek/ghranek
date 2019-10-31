@@ -7,9 +7,9 @@ import photo from "../assets/images/ghranek-photo.jpg";
 // Components
 import Skills from "../components/Skills";
 import Social from "../components/Social";
+import Header from "../components/Header";
 
 // Constants
-import title from "../constants/titles.json";
 import profile from "../constants/profile.json";
 
 class Home extends Component {
@@ -18,12 +18,7 @@ class Home extends Component {
       <div className="container">
         <div className="path" />
         <div className="right-art" />
-        <header>
-          <div className="inner">
-            <h1>{title.homePage}</h1>
-            <span>{title.description}</span>
-          </div>
-        </header>
+        <Header />
         <div className="box">
           <div className="inner">
             <img src={photo} alt="" />
@@ -31,9 +26,7 @@ class Home extends Component {
             <Skills />
           </div>
         </div>
-        <div className="inner">
-          <Social />
-        </div>
+        <Social />
       </div>
     );
   }

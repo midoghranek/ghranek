@@ -32,13 +32,15 @@ export default class Social extends Component {
   render() {
     return (
       <div className="icons">
-        {socialLinks.map(social => {
-          return (
-            <a target="blank" href={social.link}>
-              {social.icon}
-            </a>
-          );
-        })}
+        <div className="inner">
+          {socialLinks.map(social => {
+            return (
+              <a target="blank" href={social.link}>
+                {social.icon}
+              </a>
+            );
+          })}
+        </div>
       </div>
     );
   }
