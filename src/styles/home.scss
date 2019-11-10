@@ -12,154 +12,153 @@ body {
   * {
     box-sizing: border-box;
   }
-}
-
-.container {
-  padding-top: 100px;
-  @media screen and (max-width: 425px) {
-    text-align: center;
-  }
-  .inner {
-    max-width: 1640px;
-    margin: auto;
-    @media screen and (max-width: 1440px) {
-      max-width: 1300px;
-    }
-    @media screen and (max-width: 1366px) {
-      max-width: 1100px;
-    }
-    @media screen and (max-width: 1024px) {
-      max-width: 600px;
-    }
-    @media screen and (max-width: 1024px) {
-      padding: 0 15px;
-    }
-  }
-  .path {
-    background: url("../assets/images/path.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 111%;
-    height: 626px;
-    z-index: -1;
-    top: -170px;
-    left: -80px;
-    @media screen and (max-width: 1366px) {
-      top: -250px;
-    }
+  .container {
+    padding-top: 100px;
     @media screen and (max-width: 425px) {
-      width: 750px;
-      left: -300px;
-      position: fixed;
+      text-align: center;
     }
-  }
-  .right-art {
-    background: url("../assets/images/right-art.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 1091px;
-    height: 940px;
-    z-index: -1;
-    bottom: 0;
-    right: 140px;
-    @media screen and (max-width: 1440px) {
-      width: 924px;
-      height: 800px;
-    }
-    @media screen and (max-width: 1366px) {
-      width: 813px;
-      height: 700px;
-    }
-    @media screen and (max-width: 1024px) {
-      display: none;
-    }
-  }
-  header {
-    color: #fff;
-    h1 {
-      margin: 0;
-      font-size: 40px;
-      line-height: 1;
-      margin-bottom: 15px;
-    }
-    span {
-      font-size: 18px;
-      font-weight: 200;
-      margin-left: 48px;
-      @media screen and (max-width: 425px) {
-        margin-left: 0;
-      }
-    }
-  }
-  .box {
-    margin-top: 170px;
-    @media screen and (max-width: 1366px) {
-      margin-top: 100px;
-    }
-    img {
-      border-radius: 100%;
-      width: 150px;
-      height: 150px;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-        0 15px 12px rgba(0, 0, 0, 0.22);
-      @media screen and (max-width: 1366px) {
-        width: 100px;
-        height: 100px;
-      }
-    }
-    h1 {
-      font-size: 39px;
-      @media screen and (max-width: 425px) {
-        font-size: 29px;
-      }
-      margin-top: $bxmarg;
-      margin-bottom: $bxmarg;
-      color: $textColor;
+    .inner {
+      max-width: 1640px;
+      margin: auto;
       @media screen and (max-width: 1440px) {
-        margin-top: $bxmarg2;
-        margin-bottom: $bxmarg2;
+        max-width: 1300px;
+      }
+      @media screen and (max-width: 1366px) {
+        max-width: 1100px;
+      }
+      @media screen and (max-width: 1024px) {
+        max-width: 600px;
+      }
+      @media screen and (max-width: 1024px) {
+        padding: 0 15px;
       }
     }
-    .skills {
-      line-height: 40px;
-      max-width: 600px;
+    .path {
+      background: url("../assets/images/path.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 111%;
+      height: 626px;
+      z-index: -1;
+      top: -170px;
+      left: -80px;
+      @media screen and (max-width: 1366px) {
+        top: -250px;
+      }
+      @media screen and (max-width: 425px) {
+        width: 750px;
+        left: -300px;
+        position: fixed;
+      }
+    }
+    .right-art {
+      background: url("../assets/images/right-art.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 1091px;
+      height: 940px;
+      z-index: -1;
+      bottom: 0;
+      right: 140px;
+      @media screen and (max-width: 1440px) {
+        width: 924px;
+        height: 800px;
+      }
+      @media screen and (max-width: 1366px) {
+        width: 813px;
+        height: 700px;
+      }
       @media screen and (max-width: 1024px) {
-        margin: auto;
+        display: none;
+      }
+    }
+    header {
+      color: #fff;
+      h1 {
+        margin: 0;
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 15px;
       }
       span {
-        color: $textColor2;
-        font-size: 28px;
-        @media screen and (max-width: 425px) {
-          font-size: 20px;
-        }
-        font-style: italic;
+        font-size: 18px;
         font-weight: 200;
+        margin-left: 48px;
+        @media screen and (max-width: 425px) {
+          margin-left: 0;
+        }
       }
     }
-  }
-  .icons {
-    margin-top: $bxmarg;
-    @media screen and (max-width: 1440px) {
-      margin-top: $bxmarg2;
-    }
-    @media screen and (max-width: 1024px) {
-      padding-bottom: $bxmarg2;
-    }
-    a {
-      width: 40px;
-      height: 40px;
-      display: inline-block;
-      color: $textColor;
-      margin-right: 30px;
-      &:hover {
-        color: $pColor;
+    .box {
+      margin-top: 170px;
+      @media screen and (max-width: 1366px) {
+        margin-top: 100px;
       }
-      &:last-child {
-        margin-right: 0;
+      img {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        @media screen and (max-width: 1366px) {
+          width: 100px;
+          height: 100px;
+        }
       }
-      svg {
-        font-size: 30px;
+      h1 {
+        font-size: 39px;
+        @media screen and (max-width: 425px) {
+          font-size: 29px;
+        }
+        margin-top: $bxmarg;
+        margin-bottom: $bxmarg;
+        color: $textColor;
+        @media screen and (max-width: 1440px) {
+          margin-top: $bxmarg2;
+          margin-bottom: $bxmarg2;
+        }
+      }
+      .skills {
+        line-height: 40px;
+        max-width: 600px;
+        @media screen and (max-width: 1024px) {
+          margin: auto;
+        }
+        span {
+          color: $textColor2;
+          font-size: 28px;
+          @media screen and (max-width: 425px) {
+            font-size: 20px;
+          }
+          font-style: italic;
+          font-weight: 200;
+        }
+      }
+    }
+    .icons {
+      margin-top: $bxmarg;
+      @media screen and (max-width: 1440px) {
+        margin-top: $bxmarg2;
+      }
+      @media screen and (max-width: 1024px) {
+        padding-bottom: $bxmarg2;
+      }
+      a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        color: $textColor;
+        margin-right: 30px;
+        &:hover {
+          color: $pColor;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        svg {
+          font-size: 30px;
+        }
       }
     }
   }
