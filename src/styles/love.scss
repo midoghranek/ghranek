@@ -1,0 +1,33 @@
+$textColor: #fff;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap");
+
+.love {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(88, 20, 156, 1) 35%,
+    rgba(255, 0, 1, 1) 100%
+  );
+  color: $textColor;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 0;
+  .App {
+    max-width: 1170px;
+    margin: auto;
+    height: 100vh;
+    display: table;
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      h1 {
+        text-transform: uppercase;
+        font-size: 50px;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -4,6 +4,16 @@ $pColor: #3589cc;
 $bxmarg: 65px;
 $bxmarg2: 40px;
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  * {
+    box-sizing: border-box;
+  }
+}
+
 .container {
   padding-top: 100px;
   @media screen and (max-width: 425px) {
