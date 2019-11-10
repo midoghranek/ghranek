@@ -10,7 +10,7 @@ function Love() {
   return (
     <div className="love">
       <Helmet>
-        <title>I Love you Habiba</title>
+        <title>I Love you</title>
       </Helmet>
       <div className="App">
         <div className="content">
