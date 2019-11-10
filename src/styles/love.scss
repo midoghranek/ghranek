@@ -26,6 +26,9 @@ $textColor: #fff;
       h1 {
         text-transform: uppercase;
         font-size: 50px;
+        @media screen and (max-width: 520px) {
+          font-size: 30px;
+        }
         margin: 0;
       }
     }
