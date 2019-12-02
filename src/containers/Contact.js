@@ -79,6 +79,7 @@ class Contact extends Component {
               <div className="form">
                 <form id="contact-form" onSubmit={this.handleSubmit}>
                   <input
+                    required="required"
                     type="text"
                     name="name"
                     placeholder="Name"
@@ -86,6 +87,7 @@ class Contact extends Component {
                     onChange={this.handleNameChange}
                   ></input>
                   <input
+                    required="required"
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -93,6 +95,7 @@ class Contact extends Component {
                     onChange={this.handleEmailChange}
                   ></input>
                   <textarea
+                    required="required"
                     placeholder="Message"
                     name="message"
                     value={this.state.message}
