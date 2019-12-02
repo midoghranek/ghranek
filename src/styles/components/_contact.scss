@@ -50,6 +50,10 @@
       background: #191919 0% 0% no-repeat padding-box;
       margin-bottom: 30px;
     }
+    .msg {
+      color: $textColor;
+      font: 700 17px/23px Nunito;
+    }
   }
   .map {
     a {
@@ -60,6 +64,7 @@
       border-radius: 6px;
       float: right;
       display: block;
+      color: transparent;
     }
   }
 }

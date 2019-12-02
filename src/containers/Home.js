@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 // Assets
+import CV from "../assets/files/GharaniqCV.pdf";
 
 // Components
 import Social from "../components/Social";
@@ -24,7 +25,7 @@ class Home extends Component {
               Apps.
             </p>
             <div className="buttons">
-              <a className="yellow button" href="#!">
+              <a target="blank" className="yellow button" href={CV}>
                 Download CV
               </a>
               <a className="white button" href="/contact">

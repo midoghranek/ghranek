@@ -1,11 +1,69 @@
 import React, { Component } from "react";
+import Axios from "axios";
 
 import PageHeader from "../components/PageHeader";
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    message: ""
+  };
+
   componentDidMount() {
     document.getElementById("header").classList.add("hide");
   }
+
+  handleNameChange = e => {
+    this.setState({
+      name: e.target.value
+    });
+  };
+
+  handleEmailChange = e => {
+    this.setState({
+      email: e.target.value
+    });
+  };
+
+  handleMessageChange = e => {
+    this.setState({
+      message: e.target.value
+    });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const data = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message,
+      time: new Date()
+    };
+    Axios.post(
+      "https://europe-west1-ghranek-98d36.cloudfunctions.net/submit",
+      data
+    )
+      .then(res => {
+        if (res.data.isEmailSend) {
+          document.getElementById("msg").innerHTML =
+            "Message Sent successfully..";
+          setTimeout(function() {
+            document.getElementById("msg").innerHTML = "";
+          }, 3000);
+
+          this.setState({
+            name: "",
+            email: "",
+            message: ""
+          });
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <div>
@@ -19,24 +77,41 @@ class Contact extends Component {
                 <p>Address: Kafr Al-Dawar, Al Behira, Egypt</p>
               </div>
               <div className="form">
-                <form>
-                  <input type="text" placeholder="Name"></input>
-                  <input type="email" placeholder="Email"></input>
-                  <textarea placeholder="Message"></textarea>
+                <form id="contact-form" onSubmit={this.handleSubmit}>
                   <input
-                    class="button yellow"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    value={this.state.name}
+                    onChange={this.handleNameChange}
+                  ></input>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={this.state.email}
+                    onChange={this.handleEmailChange}
+                  ></input>
+                  <textarea
+                    placeholder="Message"
+                    name="message"
+                    value={this.state.message}
+                    onChange={this.handleMessageChange}
+                  ></textarea>
+                  <input
+                    className="button yellow"
                     type="submit"
                     value="Send Message"
                   />
+                  <p className="msg" id="msg"></p>
                 </form>
               </div>
             </div>
 
             <div className="map">
-              <a
-                target="blank"
-                href="https://goo.gl/maps/CwQpgnSYVrj9NngH7"
-              ></a>
+              <a target="blank" href="https://goo.gl/maps/CwQpgnSYVrj9NngH7">
+                map
+              </a>
             </div>
           </div>
         </div>
