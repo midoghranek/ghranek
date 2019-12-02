@@ -1,0 +1,20 @@
+.path {
+  position: fixed;
+  top: -9.10028076171875px;
+  right: 140px;
+  width: 1268px;
+  height: 1188px;
+  background: transparent url("../../assets/images/path.svg") 0% 0% no-repeat
+    padding-box;
+  z-index: -1;
+}
+.right-art {
+  position: absolute;
+  top: 250px;
+  right: 140px;
+  width: 946px;
+  height: 581px;
+  background: transparent url("../../assets/images/shape.svg") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}

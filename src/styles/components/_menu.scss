@@ -1,0 +1,44 @@
+.menu {
+  transition: right 0.2s;
+  transition-timing-function: linear;
+  background-color: #212121;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1;
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    margin-top: 270px;
+    li {
+      margin-bottom: 70px;
+      a {
+        text-decoration: none;
+        text-align: left;
+        font: 800 40px/54px Nunito;
+        color: $textColor;
+        text-transform: uppercase;
+        &.active {
+          color: $themeColor;
+        }
+      }
+    }
+  }
+  .close-button {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 1743px;
+    width: 37px;
+    height: 37px;
+    background: transparent url("../../assets/images/close-icon.svg") 0% 0%
+      no-repeat padding-box;
+  }
+}
+.menu.menu-active {
+  right: 0;
+}

@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import {
-  faFacebook,
   faTwitter,
   faGithub,
   faBehance,
-  faWhatsapp
+  faWhatsapp,
+  faFacebookF
 } from "@fortawesome/free-brands-svg-icons";
 
 import socialLinks from "../constants/social.json";
@@ -16,7 +16,7 @@ socialLinks.map(social => {
     default:
       return (social.icon = <FontAwesomeIcon icon={faLink} />);
     case "facebook":
-      return (social.icon = <FontAwesomeIcon icon={faFacebook} />);
+      return (social.icon = <FontAwesomeIcon icon={faFacebookF} />);
     case "twitter":
       return (social.icon = <FontAwesomeIcon icon={faTwitter} />);
     case "github":

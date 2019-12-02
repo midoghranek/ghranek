@@ -1,0 +1,19 @@
+.page-header {
+  h1 {
+    margin: 0;
+    display: inline-block;
+    color: $textColor;
+    font: 900 43px/58px Nunito;
+    text-transform: uppercase;
+  }
+  .back-button {
+    span {
+      display: inline-block;
+      width: 51px;
+      height: 28px;
+      background: transparent url("../../assets/images/back-icon.svg") 0% 0%
+        no-repeat padding-box;
+      margin-right: 40px;
+    }
+  }
+}

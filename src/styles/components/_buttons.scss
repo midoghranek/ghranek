@@ -1,0 +1,22 @@
+.buttons {
+  margin-top: 80px;
+}
+
+.button {
+  width: 223px;
+  height: 56px;
+  margin-right: 30px;
+  display: inline-block;
+  text-align: center;
+  color: $textColor;
+  font: 600 17px/56px Nunito;
+  text-decoration: none;
+  box-shadow: 0px 3px 22px #ffffff29;
+  border-radius: 6px;
+  &.yellow {
+    background-color: #deba47;
+  }
+  &.white {
+    background-color: #d2d2d2;
+  }
+}

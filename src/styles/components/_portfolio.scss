@@ -1,0 +1,61 @@
+.port {
+  margin-top: 100px;
+  .projects {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    .project {
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 30px;
+      .project-photo {
+        a {
+          border-radius: 6px;
+          display: block;
+          width: 386px;
+          height: 226px;
+          overflow: hidden;
+          position: relative;
+          &::before {
+            content: "";
+            border-radius: 6px;
+            display: block;
+            width: 386px;
+            height: 226px;
+            overflow: hidden;
+            background-color: #000;
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &:hover {
+            &::before {
+              content: "Preview";
+              font: 700 23px/31px Nunito;
+              background-color: $themeColor;
+              opacity: 1;
+              color: $textColor2;
+              text-align: center;
+              line-height: 226px;
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .project-title {
+        a {
+          text-decoration: none;
+          text-align: center;
+          font: 700 20px/27px Nunito;
+          color: $textColor2;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

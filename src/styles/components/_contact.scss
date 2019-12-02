@@ -1,0 +1,65 @@
+.contact {
+  margin-top: 100px;
+  .left-content {
+    float: left;
+  }
+  .info {
+    margin-bottom: 45px;
+    p {
+      font: 700 23px/31px Nunito;
+      color: $textColor;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+  .form {
+    width: 535px;
+    input,
+    textarea {
+      height: 60px;
+      border-radius: 6px;
+      border: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      color: $textColor;
+      padding-left: 30px;
+      padding-right: 30px;
+      font: 700 18px/24px Nunito;
+      &::placeholder {
+        font: 700 18px/24px Nunito;
+        color: $textColor2;
+      }
+      &:focus {
+        outline: 0;
+      }
+      &[type="text"],
+      &[type="email"] {
+        background: #191919 0% 0% no-repeat padding-box;
+      }
+      &[type="submit"] {
+        width: 181px;
+        height: 56px;
+        font: 600 17px/23px Nunito;
+        color: $textColor;
+        cursor: pointer;
+      }
+    }
+    textarea {
+      height: 185px;
+      padding-top: 30px;
+      background: #191919 0% 0% no-repeat padding-box;
+      margin-bottom: 30px;
+    }
+  }
+  .map {
+    a {
+      width: 950px;
+      height: 671px;
+      background: transparent url("../../assets/images/map.png") 0% 0% no-repeat
+        padding-box;
+      border-radius: 6px;
+      float: right;
+      display: block;
+    }
+  }
+}

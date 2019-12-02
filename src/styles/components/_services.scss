@@ -1,0 +1,49 @@
+.services {
+  margin-top: 100px;
+  .services-inner {
+    margin-left: -50px;
+    margin-right: -50px;
+    overflow: hidden;
+    .service {
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 33.333%;
+      float: left;
+      .service-content {
+        width: 478px;
+        height: 256px;
+        background: #191919 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding-right: 70px;
+        padding-left: 70px;
+        padding-top: 60px;
+        margin-bottom: 100px;
+        position: relative;
+        &:hover {
+          background-color: $themeColor;
+        }
+        .service-num {
+          position: absolute;
+          font: 900 Italic 90px/123px Nunito;
+          letter-spacing: 0;
+          color: $textColor2;
+          top: 0;
+          left: 35px;
+          opacity: 0.14;
+        }
+        h2 {
+          font: 900 Italic 42px/57px Nunito;
+          margin: 0;
+          text-transform: uppercase;
+          color: $textColor2;
+          margin-bottom: 22px;
+        }
+        p {
+          margin: 0;
+          color: $textColor;
+          font: 600 23px/31px Nunito;
+        }
+      }
+    }
+  }
+}

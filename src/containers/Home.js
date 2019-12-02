@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import "../styles/home.scss";
 
 // Assets
-import photo from "../assets/images/ghranek-photo.jpg";
 
 // Components
-import Skills from "../components/Skills";
 import Social from "../components/Social";
-import Header from "../components/Header";
 
 // Constants
 import profile from "../constants/profile.json";
@@ -15,15 +11,26 @@ import profile from "../constants/profile.json";
 class Home extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="home-contents">
         <div className="path" />
         <div className="right-art" />
-        <Header />
         <div className="box">
           <div className="inner">
-            <img src={photo} alt="" />
             <h1>{profile.name}</h1>
-            <Skills />
+            <span className="line"></span>
+            <p>
+              Hello, My name is Muhammad Abu 'l-Gharaniq, I'm working as a full
+              stack web developer, I'm designing and developing Mobile and Web
+              Apps.
+            </p>
+            <div className="buttons">
+              <a className="yellow button" href="#!">
+                Download CV
+              </a>
+              <a className="white button" href="/contact">
+                Hire me
+              </a>
+            </div>
           </div>
         </div>
         <Social />

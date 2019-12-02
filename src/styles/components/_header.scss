@@ -1,0 +1,23 @@
+header {
+  color: #fff;
+  h1 {
+    margin: 0;
+    float: left;
+    font: 900 51px/70px Nunito;
+    color: $textColor;
+  }
+  .nav {
+    .nav-button {
+      display: block;
+      width: 50px;
+      height: 32px;
+      background: transparent url("../../assets/images/menu-icon.svg") 0% 0%
+        no-repeat padding-box;
+      float: right;
+      margin-top: 20px;
+      &:hover {
+        color: #deba47;
+      }
+    }
+  }
+}
