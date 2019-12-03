@@ -8,6 +8,9 @@
     @media screen and (max-width: 1440px) {
       font: 900 35px/48px Nunito;
     }
+    @media screen and (max-width: 425px) {
+      font: 900 25px/38px Nunito;
+    }
   }
   .back-button {
     span {

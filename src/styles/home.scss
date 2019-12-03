@@ -25,6 +25,9 @@ body {
     @media screen and (max-width: 1366px) {
       padding-top: 70px;
     }
+    @media screen and (max-width: 425px) {
+      padding-top: 30px;
+    }
     .inner {
       max-width: 1640px;
       margin: auto;
@@ -38,7 +41,7 @@ body {
       @media screen and (max-width: 1024px) {
         max-width: 600px;
       }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 768px) {
         padding: 0 15px;
       }
     }
