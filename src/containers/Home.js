@@ -21,6 +21,11 @@ class Home extends Component {
     animateCSS(".icons", "bounceInUp");
   }
 
+  handlePush = event => {
+    event.preventDefault();
+    this.props.history.push("/contact");
+  };
+
   render() {
     return (
       <div className="home-contents">
@@ -39,7 +44,11 @@ class Home extends Component {
               <a target="blank" className="yellow button" href={CV}>
                 Download CV
               </a>
-              <a className="white button" href="/contact">
+              <a
+                className="white button"
+                onClick={this.handlePush}
+                href="/contact"
+              >
                 Hire me
               </a>
             </div>
