@@ -11,6 +11,7 @@ import profile from "../constants/profile.json";
 
 class Home extends Component {
   componentDidMount() {
+    document.getElementById("header").classList.remove("hide");
     const animateCSS = (element, animationName) => {
       const node = document.querySelector(element);
       node.classList.add("animated", animationName);
