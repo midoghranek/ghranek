@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./styles/main.scss";
 import "./styles/home.scss";
+import "animate.css";
 
 import {
   BrowserRouter as Router,

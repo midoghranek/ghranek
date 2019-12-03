@@ -10,6 +10,16 @@ import Social from "../components/Social";
 import profile from "../constants/profile.json";
 
 class Home extends Component {
+  componentDidMount() {
+    const animateCSS = (element, animationName) => {
+      const node = document.querySelector(element);
+      node.classList.add("animated", animationName);
+    };
+    animateCSS(".box", "bounceInDown");
+    animateCSS(".right-art", "bounceInRight");
+    animateCSS(".icons", "bounceInUp");
+  }
+
   render() {
     return (
       <div className="home-contents">

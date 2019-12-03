@@ -12,6 +12,14 @@ class Contact extends Component {
 
   componentDidMount() {
     document.getElementById("header").classList.add("hide");
+    document.getElementById("header").classList.add("hide");
+    document.getElementById("header").classList.add("hide");
+    const animateCSS = (element, animationName) => {
+      const node = document.querySelector(element);
+      node.classList.add("animated", animationName);
+    };
+    animateCSS(".map", "bounceInRight");
+    animateCSS(".left-content", "bounceInLeft");
   }
 
   handleNameChange = e => {

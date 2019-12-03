@@ -6,6 +6,11 @@ import portfolio from "../constants/portfolio";
 class Portfolio extends Component {
   componentDidMount() {
     document.getElementById("header").classList.add("hide");
+    const animateCSS = (element, animationName) => {
+      const node = document.querySelector(element);
+      node.classList.add("animated", animationName);
+    };
+    animateCSS(".projects", "bounceInUp");
   }
   render() {
     return (

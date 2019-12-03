@@ -6,6 +6,12 @@ import services from "../constants/services.json";
 class Services extends Component {
   componentDidMount() {
     document.getElementById("header").classList.add("hide");
+    document.getElementById("header").classList.add("hide");
+    const animateCSS = (element, animationName) => {
+      const node = document.querySelector(element);
+      node.classList.add("animated", animationName);
+    };
+    animateCSS(".services", "bounceInUp");
   }
   render() {
     return (
