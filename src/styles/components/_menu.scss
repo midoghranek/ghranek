@@ -32,6 +32,9 @@
         @media screen and (max-width: 1366px) {
           font: 800 30px/44px Nunito;
         }
+        @media screen and (max-width: 425px) {
+          font-size: 25px;
+        }
         color: $textColor;
         text-transform: uppercase;
         &.active {
