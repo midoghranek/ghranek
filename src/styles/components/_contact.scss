@@ -2,6 +2,9 @@
   margin-top: 100px;
   .left-content {
     float: left;
+    @media screen and (max-width: 1024px) {
+      float: none;
+    }
   }
   .info {
     margin-bottom: 45px;
