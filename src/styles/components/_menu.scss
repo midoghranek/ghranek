@@ -14,12 +14,21 @@
     margin: 0;
     text-align: center;
     margin-top: 270px;
+    @media screen and (max-width: 1366px) {
+      margin-top: 200px;
+    }
     li {
       margin-bottom: 70px;
+      @media screen and (max-width: 1366px) {
+        margin-bottom: 40px;
+      }
       a {
         text-decoration: none;
         text-align: left;
         font: 800 40px/54px Nunito;
+        @media screen and (max-width: 1366px) {
+          font: 800 30px/44px Nunito;
+        }
         color: $textColor;
         text-transform: uppercase;
         &.active {
@@ -32,11 +41,20 @@
     display: block;
     position: absolute;
     top: 120px;
-    left: 1743px;
+    right: 140px;
     width: 37px;
     height: 37px;
     background: transparent url("../../assets/images/close-icon.svg") 0% 0%
       no-repeat padding-box;
+    @media screen and (max-width: 1366px) {
+      top: 90px;
+    }
+    @media screen and (max-width: 425px) {
+      right: 15px;
+      width: 27px;
+      height: 27px;
+      background-size: cover;
+    }
   }
 }
 .menu.menu-active {

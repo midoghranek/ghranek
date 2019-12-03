@@ -7,6 +7,9 @@
   background: transparent url("../../assets/images/path.svg") 0% 0% no-repeat
     padding-box;
   z-index: -1;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 .right-art {
   position: absolute;
@@ -17,4 +20,16 @@
   background: transparent url("../../assets/images/shape.svg") 0% 0% no-repeat
     padding-box;
   opacity: 1;
+  @media screen and (max-width: 1440px) {
+    width: 600px;
+    height: 366px;
+    background-size: cover;
+  }
+  @media screen and (max-width: 1366px) {
+    width: 500px;
+    height: 305px;
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }

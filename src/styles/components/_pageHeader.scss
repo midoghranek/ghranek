@@ -5,6 +5,9 @@
     color: $textColor;
     font: 900 43px/58px Nunito;
     text-transform: uppercase;
+    @media screen and (max-width: 1440px) {
+      font: 900 35px/48px Nunito;
+    }
   }
   .back-button {
     span {
@@ -14,6 +17,11 @@
       background: transparent url("../../assets/images/back-icon.svg") 0% 0%
         no-repeat padding-box;
       margin-right: 40px;
+      @media screen and (max-width: 1440px) {
+        width: 41px;
+        height: 22px;
+        background-size: cover;
+      }
     }
   }
 }

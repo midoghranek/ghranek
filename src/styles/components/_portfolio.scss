@@ -9,6 +9,14 @@
       padding-left: 15px;
       padding-right: 15px;
       margin-bottom: 30px;
+      @media screen and (max-width: 1366px) {
+        float: none;
+        width: 386px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        border-radius: 6px;
+      }
       .project-photo {
         a {
           border-radius: 6px;

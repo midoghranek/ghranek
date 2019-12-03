@@ -112,7 +112,7 @@ class Contact extends Component {
             </div>
 
             <div className="map">
-              <a target="blank" href="https://goo.gl/maps/CwQpgnSYVrj9NngH7">
+              <a target="blank" href="https://goo.gl/maps/mLm9DiSy5QpEgSHa7">
                 map
               </a>
             </div>
