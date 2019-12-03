@@ -5,7 +5,10 @@
   position: relative;
   @media screen and (max-width: 1366px) {
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 40px;
   }
   a {
     width: 50px;
