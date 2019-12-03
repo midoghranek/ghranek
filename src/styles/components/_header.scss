@@ -22,7 +22,8 @@ header {
       float: right;
       margin-top: 20px;
       &:hover {
-        color: #deba47;
+        background: transparent url("../../assets/images/menu-icon-hover.svg")
+          0% 0%;
       }
       @media screen and (max-width: 1024px) {
         width: 40px;

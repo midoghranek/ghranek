@@ -21,8 +21,8 @@
   color: $textColor;
   font: 600 17px/56px Nunito;
   text-decoration: none;
-  box-shadow: 0px 3px 22px #ffffff29;
   border-radius: 6px;
+  transition: background-color, color 0.2s;
   @media screen and (max-width: 1366px) {
     width: 200px;
     height: 48px;
@@ -33,5 +33,9 @@
   }
   &.white {
     background-color: #d2d2d2;
+  }
+  &:hover {
+    color: #deba47;
+    background-color: $textColor;
   }
 }

@@ -52,6 +52,10 @@
     height: 37px;
     background: transparent url("../../assets/images/close-icon.svg") 0% 0%
       no-repeat padding-box;
+    &:hover {
+      background: transparent url("../../assets/images/close-icon-hover.svg") 0%
+        0% no-repeat padding-box;
+    }
     @media screen and (max-width: 1366px) {
       top: 90px;
     }

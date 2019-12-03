@@ -56,6 +56,9 @@
         font: 600 17px/23px Nunito;
         color: $textColor;
         cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
       }
     }
     textarea {
@@ -80,6 +83,9 @@
       display: block;
       color: transparent;
       opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
       @media screen and (max-width: 1440px) {
         width: 650px;
         height: 571px;
