@@ -28,6 +28,9 @@
           height: 226px;
           overflow: hidden;
           position: relative;
+          @media screen and (max-width: 425px) {
+            width: 100%;
+          }
           &::before {
             content: "";
             border-radius: 6px;
@@ -40,6 +43,9 @@
             position: absolute;
             top: 0;
             left: 0;
+            @media screen and (max-width: 425px) {
+              width: 100%;
+            }
           }
           &:hover {
             &::before {
