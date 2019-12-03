@@ -17,6 +17,9 @@
     @media screen and (max-width: 1366px) {
       margin-top: 200px;
     }
+    @media screen and (max-width: 425px) {
+      margin-top: 100px;
+    }
     li {
       margin-bottom: 70px;
       @media screen and (max-width: 1366px) {
@@ -51,8 +54,9 @@
     }
     @media screen and (max-width: 425px) {
       right: 15px;
-      width: 27px;
-      height: 27px;
+      width: 25px;
+      height: 25px;
+      top: 40px;
       background-size: cover;
     }
   }
