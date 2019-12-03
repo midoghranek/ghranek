@@ -17,6 +17,9 @@
         overflow: hidden;
         border-radius: 6px;
       }
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
       .project-photo {
         a {
           border-radius: 6px;
