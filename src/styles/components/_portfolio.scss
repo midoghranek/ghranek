@@ -1,5 +1,8 @@
 .port {
   margin-top: 100px;
+  @media screen and (max-width: 425px) {
+    margin-top: 40px;
+  }
   .projects {
     margin-left: -15px;
     margin-right: -15px;

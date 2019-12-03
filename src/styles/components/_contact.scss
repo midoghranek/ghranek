@@ -1,5 +1,8 @@
 .contact {
   margin-top: 100px;
+  @media screen and (max-width: 425px) {
+    margin-top: 40px;
+  }
   .left-content {
     float: left;
     @media screen and (max-width: 1024px) {

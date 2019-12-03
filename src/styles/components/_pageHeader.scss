@@ -25,6 +25,10 @@
         height: 22px;
         background-size: cover;
       }
+      @media screen and (max-width: 425px) {
+        width: 31px;
+        height: 17px;
+      }
     }
   }
 }
