@@ -22,7 +22,7 @@ exports.submit = functions
       }
 
       const mailOptions = {
-        from: req.body.email,
+        from: `Ghranek <${gmailEmail}>`,
         replyTo: req.body.email,
         sender: req.body.email,
         to: gmailEmail,
