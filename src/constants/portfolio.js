@@ -1,5 +1,11 @@
 const portfolio = [
   {
+    image: require("../assets/images/portfolio/julia.png"),
+    title: "Julia",
+    link:
+      "https://www.behance.net/gallery/89146929/Julia-Simple-Resume-Portfolio-Theme"
+  },
+  {
     image: require("../assets/images/portfolio/1.png"),
     title: "Classi",
     link: "https://www.behance.net/gallery/88599593/Classi-Blog-PSD-Template"
