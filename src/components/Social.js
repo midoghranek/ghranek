@@ -6,7 +6,8 @@ import {
   faGithub,
   faBehance,
   faWhatsapp,
-  faFacebookF
+  faFacebookF,
+  faDribbble
 } from "@fortawesome/free-brands-svg-icons";
 
 import socialLinks from "../constants/social.json";
@@ -23,6 +24,8 @@ socialLinks.map(social => {
       return (social.icon = <FontAwesomeIcon icon={faGithub} />);
     case "behance":
       return (social.icon = <FontAwesomeIcon icon={faBehance} />);
+    case "dribbble":
+      return (social.icon = <FontAwesomeIcon icon={faDribbble} />);
     case "whatsapp":
       return (social.icon = <FontAwesomeIcon icon={faWhatsapp} />);
   }
