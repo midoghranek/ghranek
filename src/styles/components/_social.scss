@@ -25,6 +25,9 @@
       height: 40px;
       line-height: 40px;
     }
+    @media screen and (max-width: 375px) {
+      margin-bottom: 20px;
+    }
     &:hover {
       color: #444444;
       background-color: #deba47;
