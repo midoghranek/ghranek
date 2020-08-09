@@ -12,7 +12,7 @@
       padding-left: 15px;
       padding-right: 15px;
       margin-bottom: 30px;
-      @media screen and (max-width: 1366px) {
+      @media screen and (max-width: 1024px) {
         float: none;
         width: 386px;
         margin-left: auto;
@@ -63,8 +63,9 @@
           }
         }
         img {
-          width: 100%;
-          height: auto;
+          width: 386px;
+          height: 226px;
+          object-fit: cover;
         }
       }
       .project-title {
@@ -73,7 +74,13 @@
           text-align: center;
           font: 700 20px/27px Nunito;
           color: $textColor2;
-          text-transform: capitalize;
+          h3 {
+            margin-bottom: 5px;
+          }
+        }
+        p {
+          color: $textColor2;
+          text-align: center;
         }
       }
     }

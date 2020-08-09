@@ -19,7 +19,7 @@ class Portfolio extends Component {
         <div className="port">
           <div className="inner">
             <div className="projects">
-              {portfolio.map(project => (
+              {portfolio.map((project) => (
                 <div className="project">
                   <div className="project-photo">
                     <a target="blank" href={project.link}>
@@ -30,6 +30,7 @@ class Portfolio extends Component {
                     <a target="blank" href={project.link}>
                       <h3>{project.title}</h3>
                     </a>
+                    <p>{project.description}</p>
                   </div>
                 </div>
               ))}
