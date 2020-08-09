@@ -52,12 +52,6 @@ const portfolio = [
     link: "https://www.behance.net/gallery/88599837/PharmastanStore-Website",
   },
   {
-    image: require("../assets/images/portfolio/3.png"),
-    title: "Ghranek.com",
-    description: "My Personal Website Design/Coding",
-    link: "https://ghranek.com",
-  },
-  {
     image: require("../assets/images/portfolio/4.png"),
     title: "Jskript",
     description: "Landing Page Design/Coding",
