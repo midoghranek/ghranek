@@ -3,8 +3,7 @@ const portfolio = [
     image: require("../assets/images/portfolio/karim-sabry.png"),
     title: "Karim Sabry App",
     description: "Mobile App Design using AdobeXd",
-    link:
-      "https://xd.adobe.com/view/89033a08-6e06-44c8-55c2-fb3265b510f3-ff32/screen/5cc69637-9dc7-4ec4-9058-e50333569d1e?fullscreen&hints=off",
+    link: "https://xd.adobe.com/view/89033a08-6e06-44c8-55c2-fb3265b510f3-ff32",
   },
   {
     image: require("../assets/images/portfolio/bestdoc.png"),
@@ -50,7 +49,7 @@ const portfolio = [
     image: require("../assets/images/portfolio/3.png"),
     title: "Ghranek.com",
     description: "My Personal Website Design/Coding",
-    link: "https://www.behance.net/gallery/87716151/Ghranekcom",
+    link: "https://ghranek.com",
   },
   {
     image: require("../assets/images/portfolio/4.png"),
