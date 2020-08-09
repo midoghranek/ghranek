@@ -1,5 +1,11 @@
 const portfolio = [
   {
+    image: require("../assets/images/portfolio/coretecks.png"),
+    title: "Coretecks.com",
+    description: "Website developement uisng React",
+    link: "https://coretecks.com/",
+  },
+  {
     image: require("../assets/images/portfolio/karim-sabry.png"),
     title: "Karim Sabry App",
     description: "Mobile App Design using AdobeXd",
@@ -8,7 +14,7 @@ const portfolio = [
   {
     image: require("../assets/images/portfolio/bestdoc.png"),
     title: "Best1Doc",
-    description: "Best1Doc Website Development using GatsbyJs",
+    description: "Website Development using GatsbyJs",
     link: "https://best1doc.com/",
   },
   {
@@ -59,22 +65,106 @@ const portfolio = [
   },
   {
     image: require("../assets/images/portfolio/5.png"),
-    title: "BMAG",
+    title: "BMAG Theme",
     description: "Magazine Responsive Blogger Template",
     link:
       "https://themeforest.net/item/bmag-magazine-responsive-blogger-template/8933899",
   },
   {
     image: require("../assets/images/portfolio/6.png"),
-    title: "Fasel",
+    title: "Fasel Theme",
     description: "News and magazine responsive blogger theme",
     link: "https://fasel-theme.blogspot.com/",
   },
   {
     image: require("../assets/images/portfolio/7.png"),
-    title: "Baset",
+    title: "Baset Theme",
     description: "Creative Responsive Blogger Template",
     link: "http://baset-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/aflamy.png"),
+    title: "Aflamy.online",
+    description: "Website for online streaming Design/Coding",
+    link: "http://aflamyonlinex.blogspot.com",
+  },
+  {
+    image: require("../assets/images/portfolio/jblog.png"),
+    title: "Jblog Theme",
+    description: "Personal blog responsive blogger theme",
+    link: "https://jblog-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/khafif.png"),
+    title: "Khafeef Theme",
+    description: "Personal blog responsive blogger theme",
+    link: "https://khafeef-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/cleansis.png"),
+    title: "Cleansis Theme",
+    description: "Clean grid responsive blogger template",
+    link: "https://cleansis-template.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/videohat.png"),
+    title: "Videohat Theme",
+    description: "Blogger template for videos/youtube",
+    link: "http://videohat-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/modounti.png"),
+    title: "Modounti Theme",
+    description: "Personal blogger template",
+    link: "http://modounti-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/xmax.png"),
+    title: "Xmax Theme",
+    description: "Portfolio OnePage Blogger Template",
+    link: "https://xmax-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/mosaor.png"),
+    title: "Mosaor Theme",
+    description: "Resposive blogger template",
+    link: "http://mosaor.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/abda3.png"),
+    title: "Abda' Theme",
+    description: "Resposive Magazine blogger template",
+    link: "http://abda3-mag.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/hdod.png"),
+    title: "Hdod Theme",
+    description: "Personal blogger template",
+    link: "http://hdod-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/hroof.png"),
+    title: "Hroof Theme",
+    description: "News/Magazine blogger template",
+    link: "http://hroof-theme.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/arabi.png"),
+    title: "ArabiFlat Theme",
+    description: "Personal blogger template",
+    link: "http://arabi-flat.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/badr.png"),
+    title: "Badr Theme",
+    description: "Clean blogger template",
+    link: "https://badr-template.blogspot.com/",
+  },
+  {
+    image: require("../assets/images/portfolio/enoml.png"),
+    title: "Enoml Theme",
+    description: "Personal blog template",
+    link: "https://enoml-theme.blogspot.com/",
   },
 ];
 
