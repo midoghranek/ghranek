@@ -3,6 +3,25 @@
   @media screen and (max-width: 425px) {
     margin-top: 60px;
   }
+  .filter {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    li {
+      margin-bottom: 20px;
+      display: inline-block;
+      padding: 5px 40px;
+      background-color: #343434;
+      margin-right: 20px;
+      color: #999;
+      border-radius: 20px;
+      cursor: pointer;
+      &.active {
+        background-color: yellow;
+      }
+    }
+  }
   .projects {
     margin-left: -15px;
     margin-right: -15px;
