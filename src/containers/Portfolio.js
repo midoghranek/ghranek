@@ -48,16 +48,14 @@ const Portfolio = () => {
             })}
           </ul>
           <div className="projects">
-            {portfolio.map((project) => (
+            {portfolio.map((project, index) => (
               <div
-                className={`project ${project.tags.join(" ")} ${
-                  project.featured ? "featued" : ""
-                }`}
+                key={index}
+                className="project"
                 style={
-                  currrentTag.toLowerCase() === "all"
+                  currrentTag === "All"
                     ? { display: "block" }
-                    : currrentTag.toLowerCase() === "featured" &&
-                      project.featured
+                    : currrentTag === "Featured" && project.featured
                     ? { display: "block" }
                     : project.tags.includes(currrentTag.toLowerCase())
                     ? { display: "block" }
