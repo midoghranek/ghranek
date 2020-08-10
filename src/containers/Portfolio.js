@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import PageHeader from "../components/PageHeader";
 import portfolio from "../constants/portfolio";
 
-const tags = ["Featured", "React", "HTML", "Design", "Blogger", "All"];
-
 const Portfolio = () => {
   const [currrentTag, setcurrrentTag] = useState("Featured");
 
@@ -27,7 +25,7 @@ const Portfolio = () => {
       <div className="port">
         <div className="inner">
           <ul className="filter">
-            {tags.map((tag, index) => {
+            {portfolio.filters.map((tag, index) => {
               if (currrentTag === tag) {
                 return (
                   <li
@@ -48,7 +46,7 @@ const Portfolio = () => {
             })}
           </ul>
           <div className="projects">
-            {portfolio.map((project, index) => (
+            {portfolio.data.map((project, index) => (
               <div
                 key={index}
                 className="project"
