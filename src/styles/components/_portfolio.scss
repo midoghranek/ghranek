@@ -18,7 +18,8 @@
       border-radius: 20px;
       cursor: pointer;
       &.active {
-        background-color: yellow;
+        background-color: $themeColor;
+        color: $background;
       }
     }
   }

@@ -7,12 +7,12 @@ import {
   faBehance,
   faWhatsapp,
   faFacebookF,
-  faDribbble
+  faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
 
 import socialLinks from "../constants/social.json";
 
-socialLinks.map(social => {
+socialLinks.map((social) => {
   switch (social.name) {
     default:
       return (social.icon = <FontAwesomeIcon icon={faLink} />);
@@ -36,9 +36,9 @@ export default class Social extends Component {
     return (
       <div className="icons">
         <div className="inner">
-          {socialLinks.map(social => {
+          {socialLinks.map((social, index) => {
             return (
-              <a target="blank" href={social.link}>
+              <a key={index} target="blank" href={social.link}>
                 {social.icon}
               </a>
             );
