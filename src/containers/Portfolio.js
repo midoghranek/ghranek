@@ -4,7 +4,7 @@ import PageHeader from "../components/PageHeader";
 import portfolio from "../constants/portfolio";
 
 const Portfolio = () => {
-  const [currrentTag, setcurrrentTag] = useState("Featured");
+  const [currrentTag, setcurrrentTag] = useState("featured");
 
   useEffect(() => {
     document.getElementById("header").classList.add("hide");
@@ -13,6 +13,12 @@ const Portfolio = () => {
       node.classList.add("animated", animationName);
     };
     animateCSS(".projects", "bounceInUp");
+
+    const search = document.location.search;
+    if (search.includes("?q=")) {
+      let tag = search.replace("?q=", "");
+      setcurrrentTag(tag);
+    }
   }, []);
 
   const filter = (i) => {
@@ -26,19 +32,19 @@ const Portfolio = () => {
         <div className="inner">
           <ul className="filter">
             {portfolio.filters.map((tag, index) => {
-              if (currrentTag === tag) {
+              if (currrentTag === tag.toLowerCase()) {
                 return (
                   <li
                     className="active"
                     key={index}
-                    onClick={() => filter(tag)}
+                    onClick={() => filter(tag.toLowerCase())}
                   >
                     {tag}
                   </li>
                 );
               } else {
                 return (
-                  <li key={index} onClick={() => filter(tag)}>
+                  <li key={index} onClick={() => filter(tag.toLowerCase())}>
                     {tag}
                   </li>
                 );
@@ -51,9 +57,9 @@ const Portfolio = () => {
                 key={index}
                 className="project"
                 style={
-                  currrentTag === "All"
+                  currrentTag === "all"
                     ? { display: "block" }
-                    : currrentTag === "Featured" && project.featured
+                    : currrentTag === "featured" && project.featured
                     ? { display: "block" }
                     : project.tags.includes(currrentTag.toLowerCase())
                     ? { display: "block" }
