@@ -7,8 +7,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink
+  NavLink,
 } from "react-router-dom";
+
+// Assets
+import CV from "./assets/files/GharaniqCV.pdf";
 
 // Constants
 import title from "./constants/titles.json";
@@ -20,39 +23,43 @@ import Portfolio from "./containers/Portfolio";
 import Services from "./containers/Services";
 import Contact from "./containers/Contact";
 
+const CVPush = () => {
+  window.location.href = CV;
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { active: false };
   }
 
-  menuClick = event => {
+  menuClick = (event) => {
     event.preventDefault();
     this.setState({
-      active: true
+      active: true,
     });
     document.getElementById("menu").classList.add("menu-active");
   };
 
-  menuHide = event => {
+  menuHide = (event) => {
     event.preventDefault();
     this.setState({
-      active: false
+      active: false,
     });
     document.getElementById("menu").classList.remove("menu-active");
   };
 
-  menuHideOnRouteHome = event => {
+  menuHideOnRouteHome = (event) => {
     this.setState({
-      active: false
+      active: false,
     });
     document.getElementById("menu").classList.remove("menu-active");
     document.getElementById("header").classList.remove("hide");
   };
 
-  menuHideOnRoute = event => {
+  menuHideOnRoute = (event) => {
     this.setState({
-      active: false
+      active: false,
     });
     document.getElementById("menu").classList.remove("menu-active");
     document.getElementById("header").classList.add("hide");
@@ -121,6 +128,7 @@ class App extends Component {
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/services" component={Services} />
             <Route path="/contact" component={Contact} />
+            <Route path="/cv" component={CVPush} />
           </Switch>
         </div>
       </Router>
