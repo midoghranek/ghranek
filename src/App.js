@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 
 // Assets
-import CV from "./assets/files/GharaniqCV.pdf";
+import ResumeFile from "./assets/files/GharaniqCV.pdf";
 
 // Constants
 import title from "./constants/titles.json";
@@ -23,8 +23,8 @@ import Portfolio from "./containers/Portfolio";
 import Services from "./containers/Services";
 import Contact from "./containers/Contact";
 
-const CVPush = () => {
-  window.location.href = CV;
+const Resume = () => {
+  window.location.href = ResumeFile;
 };
 
 class App extends Component {
@@ -128,7 +128,7 @@ class App extends Component {
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/services" component={Services} />
             <Route path="/contact" component={Contact} />
-            <Route path="/cv" component={CVPush} />
+            <Route path="/cv" component={Resume} />
           </Switch>
         </div>
       </Router>
