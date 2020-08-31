@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import React from "react";
 import privacyMD from "../posts/privacy.md";
+import BlogPost from "../components/BlogPost";
 
 const Privacy = () => {
-  const [mark, setMark] = useState("");
-
-  useEffect(() => {
-    fetch(privacyMD)
-      .then((res) => res.text())
-      .then((text) => setMark(text));
-  }, []);
-
-  return (
-    <div className="blog-post">
-      <div className="inner">
-        <ReactMarkdown source={mark} />
-      </div>
-    </div>
-  );
+  return <BlogPost content={privacyMD} />;
 };
 
 export default Privacy;
