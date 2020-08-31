@@ -22,6 +22,7 @@ import About from "./containers/About";
 import Portfolio from "./containers/Portfolio";
 import Services from "./containers/Services";
 import Contact from "./containers/Contact";
+import Privacy from "./containers/Privacy";
 
 const Resume = () => {
   window.location.href = ResumeFile;
@@ -129,6 +130,7 @@ class App extends Component {
             <Route path="/services" component={Services} />
             <Route path="/contact" component={Contact} />
             <Route path="/cv" component={Resume} />
+            <Route path="/privacy" component={Privacy} />
           </Switch>
         </div>
       </Router>
