@@ -7904,11 +7904,6 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-list-files@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/list-files/-/list-files-1.1.4.tgz#ec7403155d3a678507d91f40eeaa24a559aedcad"
-  integrity sha1-7HQDFV06Z4UH2R9A7qokpVmu3K0=
-
 listenercount@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/listenercount/-/listenercount-1.0.1.tgz#84c8a72ab59c4725321480c975e6508342e70937"
